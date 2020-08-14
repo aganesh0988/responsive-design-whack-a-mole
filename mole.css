@@ -1,0 +1,66 @@
+body {
+  background-color: lime;
+}
+
+
+.header {
+  background-color: deeppink;
+  padding: 5px;
+  border: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18pt;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  height: 40px;
+  align-content: center;
+}
+
+.pf{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: lime;
+}
+
+.wgs{
+  height: 241px;
+  position: relative ;
+  width: 320px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.wgs__mole-head{
+  height: 178px;
+  position: absolute;
+  width: 188px;
+  right: 77px;
+  transition: margin-top 0.25s;
+}
+
+.wgs__dirt-pile{
+  height: 110px;
+  position: absolute ;
+  width: 320px;
+  bottom: 0;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 241px;
+}
+
+.header__status-words--hidden {
+  visibility: hidden;
+}
+
+.header__score{
+  position: relative;
+  left: 15px;
+}
+
+.header__counter{
+  position: relative;
+  right: 15px;
+}
